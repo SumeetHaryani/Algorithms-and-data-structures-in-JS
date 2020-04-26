@@ -12,7 +12,7 @@ function checkAnagram(word1, word2) {
   }
   const lookup = {};
   for (const i of word1) {
-    lookup[i] = lookup[i] || 0 + 1;
+    lookup[i] = (lookup[i] || 0) + 1;
   }
   for (const i of word2) {
     if (!lookup[i]) {
@@ -22,5 +22,5 @@ function checkAnagram(word1, word2) {
   }
   return true;
 }
-const result = checkAnagram('ike', 'kei');
+const result = checkAnagram('ikee', 'keia');
 console.log('result->', result);

@@ -29,10 +29,10 @@ function checkSame1(arr1, arr2) {
   const counter1 = {};
   const counter2 = {};
   for (const i of arr1) {
-    counter1[i] = counter1[i] || 0 + 1;
+    counter1[i] = (counter1[i] || 0) + 1;
   }
   for (const i of arr2) {
-    counter2[i] = counter2[i] || 0 + 1;
+    counter2[i] = (counter2[i] || 0 )+ 1;
   }
 
   for (const key in counter1) {
