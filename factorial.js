@@ -12,6 +12,6 @@ function factorial(num) {
   return num * factorial(num - 1);
 }
 
-const result=factorial(4)
-console.log('result->',result)
-//add  solution
+const result = factorial(4);
+console.log('result->', result);
+// add  solution
