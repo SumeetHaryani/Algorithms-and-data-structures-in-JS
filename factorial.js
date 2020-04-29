@@ -14,4 +14,3 @@ function factorial(num) {
 
 const result = factorial(4);
 console.log('result->', result);
-// add  solution
