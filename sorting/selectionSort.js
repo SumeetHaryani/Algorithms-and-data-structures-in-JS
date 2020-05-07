@@ -1,3 +1,8 @@
+/**
+ * Selection Sort
+ * Time Complexity: O(n^2)
+ */
+
 function selectionSort(arr) {
   const swap = (arr, idx1, idx2) => {
     [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
@@ -10,10 +15,9 @@ function selectionSort(arr) {
         min = j;
       }
     }
-    swap(arr, i, min);
+    if (i !== min) swap(arr, i, min);
   }
   return arr;
-  
 }
 const result = selectionSort([42, 55, 12, 1, 8]);
 console.log('result', result);
